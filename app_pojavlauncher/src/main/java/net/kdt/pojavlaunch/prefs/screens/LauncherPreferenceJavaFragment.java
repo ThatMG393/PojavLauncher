@@ -35,9 +35,10 @@ public class LauncherPreferenceJavaFragment extends LauncherPreferenceFragment {
         int maxRAM;
         int deviceRam = getTotalDeviceMemory(seek7.getContext());
 
-        if(is32BitsDevice() || deviceRam < 2048) maxRAM = Math.min(1024, deviceRam);
-        else maxRAM = deviceRam - (deviceRam < 3064 ? 800 : 1024); //To have a minimum for the device to breathe
-
+        /*if(is32BitsDevice() || deviceRam < 2048) maxRAM = Math.min(1024, deviceRam);
+        else */ maxRAM = deviceRam - (deviceRam < 3064 ? 800 : 1024); //To have a minimum for the device to breathe
+        // why 32bit
+        
         seek7.setMin(256);
         seek7.setMax(maxRAM);
         seek7.setValue(ramAllocation);
