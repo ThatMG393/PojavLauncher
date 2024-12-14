@@ -156,8 +156,8 @@ public class LauncherPreferences {
         if (deviceRam < 1536) return 450;
         if (deviceRam < 2048) return 600;
         // Limit the max for 32 bits devices more harshly
-        if (is32BitsDevice()) return 700;
-
+        // if (is32BitsDevice()) return 700;
+	// He-hell naw 🗣🔥
         if (deviceRam < 3064) return 936;
         if (deviceRam < 4096) return 1148;
         if (deviceRam < 6144) return 1536;
