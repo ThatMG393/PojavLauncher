@@ -7,7 +7,6 @@
     <integer name="gesture_delay_seekbar_min">100</integer>
     <integer name="gesture_delay_seekbar_max">1000</integer>
 
-
     <integer name="button_scale_seekbar_increment">5</integer>
     <integer name="button_scale_seekbar_min">80</integer>
     <integer name="button_scale_seekbar_max">250</integer>
@@ -31,7 +30,7 @@
     <integer name="gamepad_deadzone_seekbar_min">50</integer>
     <integer name="gamepad_deadzone_seekbar_max">200</integer>
 
-    <integer name="memory_seekbar_increment">8</integer>
-    <integer name="memory_seekbar_min">256</integer>
+    <integer name="memory_seekbar_increment">1</integer>
+    <integer name="memory_seekbar_min">512</integer>
 
 </resources>
