@@ -21,12 +21,11 @@
 
         <net.kdt.pojavlaunch.prefs.CustomSeekBarPreference
             android:key="allocation"
-
             android:summary="@string/mcl_memory_allocation_subtitle"
             android:title="@string/mcl_memory_allocation"
             app2:showSeekBarValue="true"
             app2:min="@integer/memory_seekbar_min"
-            app2:seekBarIncrement="1"
+            app2:seekBarIncrement="@integer/memory_seekbar_increment"
             app2:selectable="false"/>
 
         <SwitchPreference
@@ -36,6 +35,5 @@
             android:title="@string/mcl_setting_java_sandbox" />
 
     </PreferenceCategory>
-
 
 </PreferenceScreen>
