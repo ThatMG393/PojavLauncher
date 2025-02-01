@@ -284,8 +284,8 @@ public class JREUtils {
         List<String> userArgs = getJavaArgs(activity, runtimeHome, userArgsString);
 
         //Remove arguments that can interfere with the good working of the launcher
-        purgeArg(userArgs,"-Xms");
-        purgeArg(userArgs,"-Xmx");
+        // purgeArg(userArgs,"-Xms");
+        // purgeArg(userArgs,"-Xmx");
         purgeArg(userArgs,"-d32");
         purgeArg(userArgs,"-d64");
         purgeArg(userArgs, "-Xint");
@@ -299,8 +299,8 @@ public class JREUtils {
         purgeArg(userArgs, "-XX:ActiveProcessorCount");
 
         //Add automatically generated args
-        userArgs.add("-Xms" + LauncherPreferences.PREF_RAM_ALLOCATION + "M");
-        userArgs.add("-Xmx" + LauncherPreferences.PREF_RAM_ALLOCATION + "M");
+        // userArgs.add("-Xms" + LauncherPreferences.PREF_RAM_ALLOCATION + "M");
+        // userArgs.add("-Xmx" + LauncherPreferences.PREF_RAM_ALLOCATION + "M");
         if(LOCAL_RENDERER != null) userArgs.add("-Dorg.lwjgl.opengl.libname=" + graphicsLib);
 
         // Force LWJGL to use the Freetype library intended for it, instead of using the one
